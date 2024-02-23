@@ -1,0 +1,26 @@
+h1{
+    color:blue;
+    background-color: lightpink;
+    font-size: x-large;
+}
+
+body {
+    font-family: Verdana, sans-serif;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  p {
+    text-wrap: pretty;  
+}
+
+.link{
+    background-color: #71bdf3;
+    margin-left: 5%;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-bottom: 2px; 
+    font-size: medium;
+}
