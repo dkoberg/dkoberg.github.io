@@ -14,8 +14,14 @@
             console.log("Updating object: " + countobj);
             countobj.innerHTML = "<b>" + i + "</b>";
 
+
+            var redIntensity = Math.floor(255 * (i / 20));
+            var redColor = "rgb(" + (255 - redIntensity) + ", " + redIntensity + ", " + redIntensity + ")";
+            document.body.style.backgroundColor = redColor;
+
+
             if (i <= 0){
-                countobj.innerHTML = "<b><font size = '+5'>Boom!</b>"
+                countobj.innerHTML = "<b><font size = '+5'>Boooom!</b>"
                 document.body.style.backgroundColor = 'red';
             }
         }
