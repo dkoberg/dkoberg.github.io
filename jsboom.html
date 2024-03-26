@@ -15,9 +15,8 @@
             countobj.innerHTML = "<b>" + i + "</b>";
 
 
-            var redIntensity = Math.floor(255 * (i / 20));
-            var redColor = "rgb(" + (255 - redIntensity) + ", " + redIntensity + ", " + redIntensity + ")";
-            document.body.style.backgroundColor = redColor;
+            var colorIntensity = Math.floor(255 * (i / 20));
+            document.body.style.backgroundColor = "rgb(255, " + colorIntensity + ", " + colorIntensity + ")";
 
 
             if (i <= 0){
