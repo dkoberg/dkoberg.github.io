@@ -1,9 +1,16 @@
 <html>
+    var FS = 0;
+    <style>
+    body{
+    font-size: 12 + FS
+    }
+    </style>
 <body>
     <h1>Exploring the DOM</h1>
 
     <h2>Count Down: <span id="count">20</span></h2>
     <button onclick="updateCount()">Next</button>
+    <button onclick="biggerfont()">Enlarge_Font</button>
 
     <script>
         var i = 20;
@@ -23,6 +30,10 @@
                 countobj.innerHTML = "<b><font size = '+5'>Boooom!</b>"
                 document.body.style.backgroundColor = 'red';
             }
+        }
+
+        function biggerfont(){
+            FS = FS + 5 
         }
     </script>
 </body>
