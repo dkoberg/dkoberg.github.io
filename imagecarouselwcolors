@@ -1,9 +1,11 @@
 <html>
 <body>
 
+    <div class="centered-content">
     <img id="cimage" height="600" src="pug.jpg" alt="Image Changes">
 
     <button onclick="next()">Next Picture</button>
+    </div>
 <script>
     var indexnumber = 0;
 
@@ -18,9 +20,6 @@
             indexnumber = 0
         }
         funcx(indexnumber)
-
-        var currentColor = document.body.style.backgroundColor;
-        currentColor = images[indexnumber]
     }
 
 images = ['curious dog.jpg',
@@ -29,6 +28,8 @@ images = ['curious dog.jpg',
 'Doggy.jpg',
 'pug.jpg'
 ]
+
+colors = ['black', 'green', 'lightgrey', 'orange', 'purple']
 
 </script>
 
