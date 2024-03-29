@@ -1,0 +1,24 @@
+<html>
+<body>
+    <h1>Exploring the DOM</h1>
+
+    <h2>Count Down: <span id="count">20</span></h2>
+    <button onclick="updateCount()">Next</button>
+
+    <script>
+        var i = 20;
+
+        function updateCount() {
+            i = i - 1;
+            countobj = document.getElementById("count");
+            console.log("Updating object: " + countobj);
+            countobj.innerHTML = "<b>" + i + "</b>";
+
+            if (i <= 0){
+                countobj.innerHTML = "<b><font size = '+5'>Boooom!</b>"
+                document.body.style.backgroundColor = 'red';
+            }
+        }
+    </script>
+</body>
+</html>
