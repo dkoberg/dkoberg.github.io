@@ -10,7 +10,8 @@
    
 
 <script>
-    document.body.style.backgroundColor = 'black'
+    currentcolor = 'black'
+    document.body.style.backgroundColor = currentColor
     var indexnumber = 0;
 
     function funcx(){
@@ -24,6 +25,9 @@
             indexnumber = 0
         }
         funcx(indexnumber)
+
+        var currentColor = document.body.style.backgroundColor;
+        currentColor = images[indexnumber]
     }
 
 images = ['curious dog.jpg',
