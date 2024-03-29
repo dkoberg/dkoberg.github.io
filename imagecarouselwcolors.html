@@ -17,6 +17,7 @@
     function funcx(){
     var carouselImage = document.getElementById("cimage");
     carouselImage.src = images[indexnumber];
+    document.boyd.style.backgroundColor = colors[indexnumber]
     }
 
     function next(){
@@ -26,8 +27,7 @@
         }
         funcx(indexnumber)
 
-        var currentColor = document.body.style.backgroundColor;
-        currentColor = images[indexnumber]
+        
     }
 
 images = ['curious dog.jpg',
