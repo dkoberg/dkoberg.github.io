@@ -3,19 +3,28 @@
 
     <img id="cimage" height="600" src="pug.jpg" alt="Image Changes">
 
+    <button onclick="next()">Next Picture</button>
 <script>
     var indexnumber = 0;
 
-    function 
+    function funcx(){
     var carouselImage = document.getElementById("cimage");
     carouselImage.src = images[indexnumber];
+    }
 
+    function next(){
+        indexnumber = indexnumber + 1
+        if (indexnumber== 6){
+            indexnumber = 1
+            funcx(indexnumber)
+        }
+    }
 
-images = ['https://danekoberg.github.io/jumping dog/jpg',
-'https://danekoberg.github.io/curious dog/jpg', 
-'https://danekoberg.github.io/Doggy/jpg',
-'https://danekoberg.github.io/German Shephard/jpeg',
-'https://danekoberg.github.io/pug/jpg'
+images = ['curious dog.jpg',
+'jumping dog.jpg', 
+'German Shephard.jpeg',
+'Doggy.jpg',
+'pug.jpg'
 ]
 
 
